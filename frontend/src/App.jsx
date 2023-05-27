@@ -1,11 +1,9 @@
-import { Blogs, Footer, Navbar } from "./components"
+import { Homepage } from "./pages/index"
 
 export default function App() {
   return (
     <>
-      <Navbar />
-      <Blogs />
-      <Footer />
+      <Homepage />
     </>
   )
 }
