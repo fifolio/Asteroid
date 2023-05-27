@@ -1,9 +1,10 @@
-import { Homepage } from "./pages/index"
+import { BlogContentPage, Homepage } from "./pages/index"
 
 export default function App() {
   return (
     <>
-      <Homepage />
+      {/* <Homepage /> */}
+      <BlogContentPage />
     </>
   )
 }
