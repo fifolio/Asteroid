@@ -15,6 +15,9 @@
     list-style-type: none;
   }
 
+  ol{
+    list-style-type: none;
+  }
   .line-break {
       white-space: pre-wrap;
       }

@@ -1,4 +1,8 @@
-import { FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { FaFacebook, FaGithub, FaLinkedinIn, FaTiktok } from 'react-icons/fa'
+import { BsTwitter, BsInstagram, BsYoutube } from 'react-icons/bs'
+import { SiFacebook } from 'react-icons/si'
+
+
 
 export default function Footer() {
 
@@ -11,59 +15,61 @@ export default function Footer() {
 
                 <div>
                     <h6 className="font-bold uppercase py-2">
-                        Solutions
+                        Space News
                     </h6>
 
                     <ol>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
+                        <li className="py-1"><a href="https://space.com" target='_blank'>Space</a></li>
+                        <li className="py-1"><a href="https://Newscientist.com" target='_blank'>News Cientist</a></li>
+                        <li className="py-1"><a href="https://Spacenews.com" target='_blank'>Space News</a></li>
+                        <li className="py-1"><a href="https://Theguardian.com" target='_blank'>The Guardian</a></li>
+                        <li className="py-1"><a href="https://Scitechdaily.com" target='_blank'>Scitech Daily</a></li>
                     </ol>
                 </div>
 
                 <div>
                     <h6 className="font-bold uppercase py-2">
-                        Solutions
+                        Discover
                     </h6>
 
                     <ol>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
+                        <li className="py-1"><a href="https://nasa.com" target='_blank'>NASA</a></li>
+                        <li className="py-1"><a href="https://spacex.com" target='_blank'>Space X</a></li>
+                        <li className="py-1"><a href="https://blueorigin.com" target='_blank'>Blue Origin</a></li>
+                        <li className="py-1"><a href="https://virgingalactic.com" target='_blank'>Virgin Galactic</a></li>
+                        <li className="py-1"><a href="https://relativityspace.com" target='_blank'>Relativity Space</a></li>
                     </ol>
                 </div>
 
                 <div>
                     <h6 className="font-bold uppercase py-2">
-                        Solutions
+                        Help
                     </h6>
 
                     <ol>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
+                        <li className="py-1">Careers</li>
+                        <li className="py-1">Terms and conditions</li>
+                        <li className="py-1">Privacy</li>
+                        <li className="py-1">Accessibility</li>
+                        <li className="py-1">Contact Asteroid</li>
                     </ol>
                 </div>
 
                 <div>
                     <h6 className="font-bold uppercase py-2">
-                        Solutions
+                        Follow Us
                     </h6>
 
                     <ol>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
-                        <li className="py-1">Marketing</li>
+                        <li className="py-1"><SiFacebook className='menu-icon' style={{ color: '#1B9CFC' }} />Facebook</li>
+                        <li className="py-1"><BsTwitter className='menu-icon' style={{ color: '#9AECDB' }} />Twitter</li>
+                        <li className="py-1"><BsInstagram className='menu-icon' style={{ color: '#FD7272' }} />Instagram</li>
+                        <li className="py-1"><FaTiktok className='menu-icon' style={{ color: '#CAD3C8' }} />TikTok</li>
+                        <li className="py-1"><BsYoutube className='menu-icon' style={{ color: '#eb2f06' }} />YouTube</li>
                     </ol>
                 </div>
+
+
 
                 <div className="col-span-2 py-2 md:pt-2">
                     <p className="font-bold uppercase">Subscribe to out Newsletter</p>
@@ -76,7 +82,6 @@ export default function Footer() {
 
                     <form className="flex flex-col sm:flex-row text-black mt-2">
                         <input className="w-full p-2 mr-4 rounded-md  text-center" type="email" placeholder="📩 Enter your email..." />
-
                         <button className="p-2 bg-[#000000] font-bold">
                             Subscribe
                         </button>
