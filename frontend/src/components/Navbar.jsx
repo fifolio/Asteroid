@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { menu, close, logo } from '../assets'
+import { Link } from 'react-router-dom'
+import { AiFillGithub } from 'react-icons/ai'
 
 export default function Navbar() {
 
@@ -12,24 +14,25 @@ export default function Navbar() {
 
                 {/* Logo */}
                 <div className="flex">
-                    <img src={logo} alt="logo" className="ml-12 md:ml-3 opacity-[100%] w-full h-[40px] " />
+                    <img src={logo} alt="logo" className="ml-12 md:ml-3 opacity-[100%] w-[125px] h-[60px] " />
                 </div>
 
                 {/* Nab Menu */}
                 <div className='flex items-center'>
                     <ul className='hidden md:flex'>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Support</li>
-                        <li>Platform</li>
-                        {/* <li>Pricing</li> */}
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/news">News</Link></li>
+                        <li><Link to="/articles">Articles</Link></li>
+                        <li><Link to="/author">Author</Link></li>
+                        <li><Link to="/about">About</Link></li>
                     </ul>
                 </div>
 
                 {/* Nav Login/SignUp btns */}
-                <div className="hidden md:flex sm:mr-10 md:mr-10">
-                    <button className="border-none bg-transparent text-black mr-4 ml-[-10rem]">Login</button>
-                    <button className="px-8 py-3">Sign Up</button>
+                <div className="hidden md:flex sm:mr-10 md:mr-10 " style={{ margin: 0 }}>
+                    <a href="https://github.com/fifolio/Asteroid" target="_blank">
+                        <button className="px-4 py-3 font-bold"><AiFillGithub style={{ float: 'left', margin: '0 10px 0 0', padding: 0, fontSize: '25px' }} />Github Repo</button>
+                    </a>
                 </div>
 
                 {/* Hamburger-menu btn */}
