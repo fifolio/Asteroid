@@ -2,6 +2,13 @@ import { useState } from 'react'
 import { menu, close, logo } from '../assets'
 import { Link } from 'react-router-dom'
 import { AiFillGithub } from 'react-icons/ai'
+import { FaHome } from 'react-icons/fa'
+import { BsNewspaper, BsFillPersonCheckFill } from 'react-icons/bs'
+import { RiArticleLine } from 'react-icons/ri'
+import { FcAbout } from 'react-icons/fc'
+
+
+
 
 export default function Navbar() {
 
@@ -36,20 +43,22 @@ export default function Navbar() {
                 </div>
 
                 {/* Hamburger-menu btn */}
-                <div className="md:hidden" onClick={handleToggleBtn}>
+                <div className="md:hidden" onClick={handleToggleBtn} style={{ cursor: 'pointer' }}>
                     <img src={!toggle ? menu : close} alt="menu" className="w-[28px] h-[28px] object-contain mr-10" />
                 </div>
             </div>
 
             {/* Mobile-menu */}
             <ul className={toggle ? `absolute bg-white w-full px-8 md:hidden` : 'hidden'}>
-                <li>Home</li>
-                <li>About</li>
-                <li>Support</li>
-                <li>Platform</li>
-                <div className="flex flex-col my-4">
-                    <button className=" bg-transparent text-black mb-4 py-3 px-8">Login</button>
-                    <button className="px-8 py-3">Sign Up</button>
+                <li><Link to="/"><FaHome className='menu-icon' /> Home</Link></li>
+                <li><Link to="/news"><BsNewspaper className='menu-icon' /> News</Link></li>
+                <li><Link to="/articles"><RiArticleLine className='menu-icon' /> Articles</Link></li>
+                <li><Link to="/author"><BsFillPersonCheckFill className='menu-icon' /> Author</Link></li>
+                <li><Link to="/about"><FcAbout className='menu-icon' /> About</Link></li>
+                <div className="my-4">
+                    <a href="https://github.com/fifolio/Asteroid" target="_blank">
+                        <button className="px-4 py-3 font-bold min-w-full">Github Repo</button>
+                    </a>
                 </div>
             </ul>
         </div >

@@ -1,10 +1,10 @@
-import { Footer, Navbar, ArticlesContent } from "../components"
+import { Blogs, Footer, Navbar } from "../components"
 
-export default function News() {
+export default function ArticlesPage({articles}) {
     return (
         <>
             <Navbar />
-            <ArticlesContent />
+            <Blogs articles={articles}/>
             <Footer />
         </>
     )

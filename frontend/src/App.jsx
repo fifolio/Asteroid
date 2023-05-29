@@ -13,7 +13,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Homepage articles={data ? data : ""} />} />
         <Route path="/news" element={<NewsPage />} />
-        <Route path="/articles" element={<ArticlesPage />} />
+        <Route path="/articles" element={<ArticlesPage articles={data ? data : ""} />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/author" element={<AuthorPage />} />
         <Route path='/article/:id' element={<BlogContentPage articles={data ? data : ""} />} />
