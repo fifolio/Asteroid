@@ -1,12 +1,13 @@
 import { BlogContentPage, Homepage, NewsPage, AboutPage, ArticlesPage, AuthorPage } from "./pages/index"
 import { Routes, Route } from 'react-router-dom'
 import useFetch from './api/data'
+import LoadingPage from "./pages/LoadingPage";
 
 export default function App() {
 
   let { loading, data, error } = useFetch('http://localhost:1337/api/blogs?populate=*');
-  if (loading) return <p>Loading...</p>
-  if (error) return <p>Error!</p>
+  if (loading) return (<LoadingPage />)
+  // if (error) return <p>Error!</p>
 
   return (
     <>

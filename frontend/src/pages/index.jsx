@@ -4,4 +4,5 @@ export { default as NewsPage } from './NewsPage'
 export { default as AboutPage } from './AboutPage'
 export { default as ArticlesPage } from './ArticlesPage'
 export { default as AuthorPage } from './AuthorPage'
+export { default as Loading } from './LoadingPage'
 
