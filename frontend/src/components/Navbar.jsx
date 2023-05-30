@@ -28,8 +28,8 @@ export default function Navbar() {
                 <div className='flex items-center'>
                     <ul className='hidden md:flex'>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/news">News</Link></li>
-                        <li><Link to="/articles">Articles</Link></li>
+                        {/* <li><Link to="/news">News</Link></li> */}
+                        <li><Link to="/articles">Browse Articles</Link></li>
                         <li><Link to="/author">Author</Link></li>
                         <li><Link to="/about">About</Link></li>
                     </ul>
@@ -51,8 +51,8 @@ export default function Navbar() {
             {/* Mobile-menu */}
             <ul className={toggle ? `absolute bg-white w-full px-8 md:hidden` : 'hidden'}>
                 <li><Link to="/"><FaHome className='menu-icon' /> Home</Link></li>
-                <li><Link to="/news"><BsNewspaper className='menu-icon' /> News</Link></li>
-                <li><Link to="/articles"><RiArticleLine className='menu-icon' /> Articles</Link></li>
+                {/* <li><Link to="/news"><BsNewspaper className='menu-icon' /> News</Link></li> */}
+                <li><Link to="/articles"><RiArticleLine className='menu-icon' /> Browse Articles</Link></li>
                 <li><Link to="/author"><BsFillPersonCheckFill className='menu-icon' /> Author</Link></li>
                 <li><Link to="/about"><FcAbout className='menu-icon' /> About</Link></li>
                 <div className="my-4">
