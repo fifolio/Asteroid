@@ -5,9 +5,11 @@ import LoadingPage from "./pages/LoadingPage";
 
 export default function App() {
 
+  // Fetching Articles
   let { loading, data, error } = useFetch('http://localhost:1337/api/blogs?populate=*');
   if (loading) return (<LoadingPage />)
   // if (error) return <p>Error!</p>
+
 
   return (
     <>
