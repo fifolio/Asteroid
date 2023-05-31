@@ -33,7 +33,7 @@ export default function Footer() {
                     </h6>
 
                     <ol>
-                        <li className="py-1"><a href="https://nasa.com" target='_blank'>NASA</a></li>
+                        <li className="py-1"><a href="https://nasa.gov" target='_blank'>NASA</a></li>
                         <li className="py-1"><a href="https://spacex.com" target='_blank'>Space X</a></li>
                         <li className="py-1"><a href="https://blueorigin.com" target='_blank'>Blue Origin</a></li>
                         <li className="py-1"><a href="https://virgingalactic.com" target='_blank'>Virgin Galactic</a></li>

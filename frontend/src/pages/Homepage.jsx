@@ -1,4 +1,4 @@
-import { Blogs, Footer, Navbar, Hot, Featured } from "../components"
+import { Blogs, Footer, Navbar, Hot, Featured, News } from "../components"
 
 export default function Homepage({ articles }) {
 
@@ -9,6 +9,7 @@ export default function Homepage({ articles }) {
       <Navbar />
       <Hot />
       <Featured />
+      <News />
       <Blogs articles={articles ? articles : ""} />
       <Footer />
     </>

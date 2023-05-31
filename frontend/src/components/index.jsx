@@ -8,4 +8,4 @@ export { default as AboutContent } from './AboutContent'
 export { default as AuthorContent } from './AuthorContent'
 export { default as Hot } from './Hot'
 export { default as Featured } from './Featured'
-
+export { default as News } from './News'

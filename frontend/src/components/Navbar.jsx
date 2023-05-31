@@ -27,11 +27,11 @@ export default function Navbar() {
                 {/* Nab Menu */}
                 <div className='flex items-center'>
                     <ul className='hidden md:flex'>
-                        <li><Link to="/">Home</Link></li>
+                        <li className='font-semibold hover:font-bold drop-shadow-2xl'><Link to="/">Home</Link></li>
                         {/* <li><Link to="/news">News</Link></li> */}
-                        <li><Link to="/articles">Browse Articles</Link></li>
-                        <li><Link to="/author">Author</Link></li>
-                        <li><Link to="/about">About</Link></li>
+                        <li className='font-semibold hover:font-bold'><Link to="/articles">Browse Articles</Link></li>
+                        <li className='font-semibold hover:font-bold'><Link to="/author">Author</Link></li>
+                        <li className='font-semibold hover:font-bold'><Link to="/about">About</Link></li>
                     </ul>
                 </div>
 
@@ -53,11 +53,11 @@ export default function Navbar() {
 
             {/* Mobile-menu */}
             <ul className={toggle ? `absolute bg-white w-full px-8 md:hidden` : 'hidden'}>
-                <li><Link to="/"><FaHome className='menu-icon' /> Home</Link></li>
+                <li className='font-semibold hover:font-bold'><Link to="/"><FaHome className='menu-icon' /> Home</Link></li>
                 {/* <li><Link to="/news"><BsNewspaper className='menu-icon' /> News</Link></li> */}
-                <li><Link to="/articles"><RiArticleLine className='menu-icon' /> Browse Articles</Link></li>
-                <li><Link to="/author"><BsFillPersonCheckFill className='menu-icon' /> Author</Link></li>
-                <li><Link to="/about"><FcAbout className='menu-icon' /> About</Link></li>
+                <li className='font-semibold hover:font-bold'><Link to="/articles"><RiArticleLine className='menu-icon' /> Browse Articles</Link></li>
+                <li className='font-semibold hover:font-bold'><Link to="/author"><BsFillPersonCheckFill className='menu-icon' /> Author</Link></li>
+                <li className='font-semibold hover:font-bold'><Link to="/about"><FcAbout className='menu-icon' /> About</Link></li>
                 <div className="my-4">
                     <a href="https://github.com/fifolio/Asteroid" target="_blank">
                         <button className="px-4 py-3 font-bold min-w-full">Github Repo</button>
