@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function Blogs({ articles }) {
 
-    console.log(articles)
+    // console.log(articles)
 
     // const blogs1 = [
     //     {

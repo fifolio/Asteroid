@@ -36,9 +36,12 @@ export default function Navbar() {
                 </div>
 
                 {/* Nav Login/SignUp btns */}
-                <div className="hidden md:flex sm:mr-10 md:mr-10 " style={{ margin: 0 }}>
+                <div className="hidden md:flex sm:mr-10 md:mr-10" style={{ margin: 0 }}>
                     <a href="https://github.com/fifolio/Asteroid" target="_blank">
-                        <button className="px-4 py-3 font-bold"><AiFillGithub style={{ float: 'left', margin: '0 10px 0 0', padding: 0, fontSize: '25px' }} />Github Repo</button>
+                        <button className="px-4 py-3 font-bold rounded-lg">
+                            <AiFillGithub className='animate-[ping_1s_ease-in-out_infinite]' style={{ position: 'absolute', float: 'left', margin: '0 10px 0 0', padding: 0, fontSize: '25px' }} />
+                            <AiFillGithub style={{ float: 'left', margin: '0 10px 0 0', padding: 0, fontSize: '25px' }} />
+                            Github Repo</button>
                     </a>
                 </div>
 

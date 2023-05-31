@@ -7,4 +7,5 @@ export { default as ArticlesContent } from './ArticlesContent'
 export { default as AboutContent } from './AboutContent'
 export { default as AuthorContent } from './AuthorContent'
 export { default as Hot } from './Hot'
+export { default as Featured } from './Featured'
 
