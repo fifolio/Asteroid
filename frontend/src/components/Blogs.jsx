@@ -53,11 +53,14 @@ export default function Blogs({ articles }) {
     // ]
 
     return (
-        <div className="w-full bg-[#f9f9f9] py-[50px]">
+        <div className="w-full bg-white py-[50px]">
 
             {/* container */}
-            <div className="max-w-[1240px] mx-auto mt-[80px]">
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 px-4 text-black">
+            <div className="max-w-[1240px] mx-auto">
+                <h1 className="lg:text-[90px] xxs:text-[50px] text-center font-bold uppercase text-gray-800">Discover 🚀</h1>
+                <p className="text-center lg:w-[600px] mx-auto mb-[60px] font-semibold xxs:w-[90%] xxs:text-[15px] text-gray-700">📚✨ Unleash Your Curiosity: Enter our Articles Section, where knowledge comes alive through captivating narratives, insightful perspectives, and engaging storytelling. Join us on this enlightening journey through the written word. 🌍🔍✍️</p>
+
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 px-4 text-black">
 
                     {articles.data.map((article) => (
                         <Link key={article.id} to={`/article/${article.id}`}>
