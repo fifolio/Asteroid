@@ -21,7 +21,9 @@ export default function Navbar() {
 
                 {/* Logo */}
                 <div className="flex">
-                    <img src={logo} alt="logo" className="ml-12 md:ml-3 opacity-[100%] w-[125px] h-[60px] " />
+                    <Link to="/">
+                        <img src={logo} alt="logo" className="ml-12 md:ml-3 opacity-[100%] w-[125px] h-[60px] " />
+                    </Link>
                 </div>
 
                 {/* Nab Menu */}
