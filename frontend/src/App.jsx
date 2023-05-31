@@ -1,4 +1,4 @@
-import { BlogContentPage, Homepage, NewsPage, AboutPage, ArticlesPage, AuthorPage, HotPage } from "./pages/index"
+import { BlogContentPage, Homepage, NewsPage, AboutPage, ArticlesPage, AuthorPage, HotPage, FeaturedPage } from "./pages/index"
 import { Routes, Route } from 'react-router-dom'
 import useFetch from './api/data'
 import LoadingPage from "./pages/LoadingPage";
@@ -15,6 +15,7 @@ export default function App() {
     <>
       <Routes>
         <Route path='/' element={<Homepage articles={data ? data : ""} />} />
+        <Route path='/featured/:id' element={<FeaturedPage />} />
         <Route path='/hot' element={<HotPage />} />
         <Route path="/news" element={<NewsPage />} />
         <Route path="/articles" element={<ArticlesPage articles={data ? data : ""} />} />

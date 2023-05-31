@@ -31,7 +31,7 @@ export default function Featured() {
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 px-4 pb-10 text-black">
 
                     {features.map((feature, index) => (
-                        <Link key={index} to="">
+                        <Link key={index} to={`/featured/${feature.id}`}>
                             <div className="bg-white rounded-sm overflow-hidden lg:h-[400px] md:h-[450px] shadow-md shadow-gray-200 hover:shadow-xl" style={{ borderBottomRightRadius: '50px', borderTopLeftRadius: '50px' }}>
                                 <img src={`http://localhost:1337${feature.attributes.coverImg.data.attributes.url}`} className="h-56 w-full object-cover" />
                                 <div className="p-3">
