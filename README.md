@@ -1,4 +1,4 @@
-<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Asteroid"></a>✨🌌 Welcome to Asteroid: Where the Cosmos Unveils its Secrets! 🚀🔭</h1>
+<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Asteroid"></a>🌌 Welcome to Asteroid: Where the Cosmos Unveils its Secrets! 🔭</h1>
 
 <p class="has-line-data" data-line-start="3" data-line-end="4"><img width="100%" height="100%" src="https://i.ibb.co/yg8k3Lw/screencapture-localhost-5173-2023-05-31-20-20-05.png" alt="N|Solid"></p>
 
@@ -12,7 +12,7 @@
 
 <h2 class="code-line" data-line-start=7 data-line-end=8 ><a id="Installation_7"></a>Installation</h2>
 <p class="has-line-data" data-line-start="8" data-line-end="9">To get started with Asteroid, you’ll need to clone this repository to your local machine:</p>
-<pre><code class="has-line-data" data-line-start="11" data-line-end="13" class="language-sh">git <span class="hljs-built_in">clone</span><a href="https://github.com/fifolio/Asteroid.git "> https://github.com/fifolio/Asteroid.git</a>
+<pre><code class="has-line-data" data-line-start="11" data-line-end="13" class="language-sh">git <span class="hljs-built_in">clone</span><a href="https://github.com/fifolio/Asteroid.git"> https://github.com/fifolio/Asteroid.git</a>
 </code></pre>
 <p class="has-line-data" data-line-start="13" data-line-end="14">Once you have the repository on your local machine, navigate to the project directory and install the necessary dependencies:</p>
 <pre><code class="has-line-data" data-line-start="16" data-line-end="19" class="language-sh"><span class="hljs-built_in">cd</span> Asteroid
