@@ -34,9 +34,9 @@ export default function FeaturedContent() {
                         </ReactMarkdown>
                     </div>
 
-                    <div className="bg-white w-full drop-shadow-md rounded-xl py-5 max-sm:col-span-2 max-sm:mt-8 h-[280px]">
+                    <div className="bg-white w-full h-max drop-shadow-md rounded-xl py-5 px-4 max-sm:col-span-2 max-sm:mt-8">
                         <img src={`http://localhost:1337${feature.attributes.authorImg.data.attributes.url}`} alt="" className='p-2 w-40 h-40 rounded-full mx-auto' />
-                        <h1 className="font-bold text-2xl text-center text-gray-900 pt-3">{feature.attributes.authorName}</h1>
+                        <h1 className="font-bold text-2xl text-center text-gray-900 pt-3 mb-4">{feature.attributes.authorName}</h1>
                         <p className="text-center text-gray-900 font-medium">{feature.attributes.authorDesc}</p>
                     </div>
 
