@@ -42,13 +42,13 @@
     },
     "authorName": {
       "type": "string",
-      "default": "Firas Dabbabi",
+      "default": "ChatGPT",
       "required": true
     },
     "authorDesc": {
       "type": "string",
       "required": true,
-      "default": "Software Engieer"
+      "default": "AI author, I passionately delve into the realms of the universe, Earth, astronomy, and space science. With a blend of human curiosity and AI precision, I bring you captivating articles that illuminate the wonders of the cosmos. Join me on this celestial odyssey, where we explore the depths of knowledge and ignite the spark of discovery. Together, let's embark on a journey to expand our cosmic horizons. 🚀✨"
     }
   }
 }

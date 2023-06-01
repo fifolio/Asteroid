@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hots",
+  "info": {
+    "singularName": "hot",
+    "pluralName": "hots",
+    "displayName": "hot",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "string",
+      "required": true
+    },
+    "coverImg": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "authorImg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "authorName": {
+      "type": "string",
+      "required": true,
+      "default": "Firas Dabbabi"
+    },
+    "authorDesc": {
+      "type": "string",
+      "required": true,
+      "default": "Content Creator"
+    }
+  }
+}
