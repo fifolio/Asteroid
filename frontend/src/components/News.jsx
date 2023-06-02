@@ -48,7 +48,7 @@ export default function News() {
                                 }}>
                                     {theNews.attributes.sourceName}
                                 </p>
-                                <img src={`${import.meta.env.VITE_SERVER_API_URL}${theNews.attributes.coverImg.data.attributes.url}`} className="w-full h-full object-cover" style={{
+                                <img src={`${theNews.attributes.coverImg.data.attributes.url}`} className="w-full h-full object-cover" style={{
                                     '-webkit-mask-image': 'linear-gradient(to top, transparent 15%, black 70%)',
                                     'mask-image': 'linear-gradient(to top, transparent 15%, black 70%)',
                                 }} />

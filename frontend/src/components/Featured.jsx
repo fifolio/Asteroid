@@ -20,7 +20,9 @@ export default function Featured() {
         features = []
     }
 
-    // let features = data.data[0].attributes;
+    const handleLinkClick = () => {
+        window.scrollTo(0, 0);
+    }
 
     return (
         <div className="w-full bg-white py-[50px]">
@@ -32,9 +34,9 @@ export default function Featured() {
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 px-4 pb-10 text-black">
 
                     {features.map((feature, index) => (
-                        <Link key={index} to={`/featured/${feature.id}`}>
+                        <Link key={index} to={`/featured/${feature.id}`} onClick={() => handleLinkClick()}>
                             <div className="bg-white rounded-sm overflow-hidden lg:h-[400px] md:h-[450px] shadow-md shadow-gray-200 hover:shadow-xl" style={{ borderBottomRightRadius: '50px', borderTopLeftRadius: '50px' }}>
-                                <img src={`${import.meta.env.VITE_SERVER_API_URL}${feature.attributes.coverImg.data.attributes.url}`} className="h-56 w-full object-cover" />
+                                <img src={`${feature.attributes.coverImg.data.attributes.url}`} className="h-56 w-full object-cover" />
                                 <div className="p-3">
                                     <h3 className="font-bold text-[20px] my-[5px]">
                                         {feature.attributes.title}

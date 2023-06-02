@@ -24,7 +24,7 @@ export default function Hot() {
 
                     <div className='xxs:mb-1 p-3'>
                         <Link to={`/hot`}>
-                            <img src={`${import.meta.env.VITE_SERVER_API_URL}${hot.coverImg.data.attributes.url}`} className='w-full mx-auto drop-shadow-md rounded-md' />
+                            <img src={`${hot.coverImg.data.attributes.url}`} className='w-full mx-auto drop-shadow-md rounded-md' />
                         </Link>
                     </div>
 
