@@ -5,9 +5,9 @@ export default function BlogContentPage({ articles }) {
 
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <BlogContent articles={articles} />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

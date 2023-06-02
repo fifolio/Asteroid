@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function ArticlesPage({ articles }) {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="w-full bg-white py-[50px]">
 
                 {/* container */}
@@ -33,7 +33,7 @@ export default function ArticlesPage({ articles }) {
                 </div>
 
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

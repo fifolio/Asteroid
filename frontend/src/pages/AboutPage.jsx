@@ -3,9 +3,9 @@ import { Footer, Navbar, AboutContent } from "../components"
 export default function News() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <AboutContent />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

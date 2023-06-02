@@ -2,6 +2,7 @@ import { BlogContentPage, Homepage, NewsPage, AboutPage, ArticlesPage, AuthorPag
 import { Routes, Route } from 'react-router-dom'
 import useFetch from './api/data'
 import LoadingPage from "./pages/LoadingPage";
+import { Footer, Navbar } from "./components";
 
 export default function App() {
 
@@ -13,6 +14,7 @@ export default function App() {
 
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Homepage articles={data ? data : ""} />} />
         <Route path='/featured/:id' element={<FeaturedPage />} />
@@ -23,6 +25,7 @@ export default function App() {
         <Route path="/author" element={<AuthorPage />} />
         <Route path='/article/:id' element={<BlogContentPage articles={data ? data : ""} />} />
       </Routes>
+      <Footer />
     </>
   )
 } 

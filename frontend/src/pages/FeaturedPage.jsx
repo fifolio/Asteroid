@@ -3,9 +3,9 @@ import { Footer, Navbar, FeaturedContent } from "../components"
 export default function FeaturedPage() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <FeaturedContent />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

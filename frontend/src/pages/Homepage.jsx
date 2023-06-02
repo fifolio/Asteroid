@@ -6,12 +6,12 @@ export default function Homepage({ articles }) {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hot />
       <Featured />
       <News />
       <Blogs articles={articles ? articles : ""} />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
