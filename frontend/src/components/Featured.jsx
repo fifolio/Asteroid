@@ -14,7 +14,7 @@ export default function Featured() {
     if (data) {
         let arr = data.data;
         features = arr;
-        console.log('Features', features)
+        // console.log('Features', features)
 
     } else {
         features = []

@@ -13,7 +13,7 @@ export default function News() {
     if (data) {
         let arr = data.data;
         news = arr;
-        console.log('Features', news)
+        // console.log('news', news)
 
     } else {
         news = []

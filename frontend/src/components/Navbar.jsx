@@ -15,6 +15,11 @@ export default function Navbar() {
     const [toggle, setToggle] = useState(false);
     const handleToggleBtn = () => setToggle(!toggle)
 
+    // ScrollUP
+    const scrollUP = () => {
+        window.scrollTo(0, 0);
+    }
+
     return (
         <div className="w-screen h-[80px] z-10 bg-white fixed drop-shadow-lg">
             <div className="flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto">
@@ -29,11 +34,11 @@ export default function Navbar() {
                 {/* Nab Menu */}
                 <div className='flex items-center'>
                     <ul className='hidden md:flex'>
-                        <li className='font-semibold hover:font-bold drop-shadow-2xl'><Link to="/">Home</Link></li>
+                        <Link to="/" onClick={scrollUP}><li className='font-semibold hover:font-bold drop-shadow-2xl'>Home</li></Link>
                         {/* <li><Link to="/news">News</Link></li> */}
-                        <li className='font-semibold hover:font-bold'><Link to="/articles">Browse Articles</Link></li>
-                        <li className='font-semibold hover:font-bold'><Link to="/author">Author</Link></li>
-                        <li className='font-semibold hover:font-bold'><Link to="/about">About</Link></li>
+                        <Link to="/articles" onClick={scrollUP}><li className='font-semibold hover:font-bold'>Browse Articles</li></Link>
+                        <Link to="/author" onClick={scrollUP}><li className='font-semibold hover:font-bold'>Author</li></Link>
+                        <Link to="/about" onClick={scrollUP}><li className='font-semibold hover:font-bold'>About</li></Link>
                     </ul>
                 </div>
 
@@ -55,11 +60,11 @@ export default function Navbar() {
 
             {/* Mobile-menu */}
             <ul className={toggle ? `absolute bg-white w-full px-8 md:hidden` : 'hidden'}>
-                <li className='font-semibold hover:font-bold'><Link to="/"><FaHome className='menu-icon' /> Home</Link></li>
+                <Link to="/">  <li className='font-semibold hover:font-bold'><FaHome className='menu-icon' /> Home</li></Link>
                 {/* <li><Link to="/news"><BsNewspaper className='menu-icon' /> News</Link></li> */}
-                <li className='font-semibold hover:font-bold'><Link to="/articles"><RiArticleLine className='menu-icon' /> Browse Articles</Link></li>
-                <li className='font-semibold hover:font-bold'><Link to="/author"><BsFillPersonCheckFill className='menu-icon' /> Author</Link></li>
-                <li className='font-semibold hover:font-bold'><Link to="/about"><FcAbout className='menu-icon' /> About</Link></li>
+                <Link to="/articles"><li className='font-semibold hover:font-bold'><RiArticleLine className='menu-icon' /> Browse Articles</li></Link>
+                <Link to="/author"> <li className='font-semibold hover:font-bold'><BsFillPersonCheckFill className='menu-icon' /> Author</li></Link>
+                <Link to="/about"><li className='font-semibold hover:font-bold'><FcAbout className='menu-icon' /> About</li></Link>
                 <div className="my-4">
                     <a href="https://github.com/fifolio/Asteroid" target="_blank">
                         <button className="px-4 py-3 font-bold min-w-full">Github Repo</button>

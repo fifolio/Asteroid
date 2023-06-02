@@ -11,7 +11,6 @@ export default function App() {
   if (loading) return (<LoadingPage />)
   // if (error) return <p>Error!</p>
 
-
   return (
     <>
       <Navbar />
