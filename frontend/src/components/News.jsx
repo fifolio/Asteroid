@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-// import LoadingPage from '../pages/LoadingPage'
+import LoadingPage from '../pages/LoadingPage'
 import useFetch from '../api/data'
 
 export default function News() {
 
     // Fetching Hot Article
     let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/news?populate=*`);
-    // if (loading) return (<LoadingPage />)
+    if (loading) return (<LoadingPage />)
 
 
     let news = [];
