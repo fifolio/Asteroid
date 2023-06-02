@@ -7,7 +7,7 @@ import useFetch from '../api/data'
 export default function FeaturedContent() {
 
     // Fetching Hot Article
-    let { loading, data, error } = useFetch('http://localhost:1337/api/features?populate=*');
+    let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/features?populate=*`);
     if (loading) return (<LoadingPage />)
     const { id } = useParams();
 
@@ -27,7 +27,7 @@ export default function FeaturedContent() {
             md:gap-x-8 sm:gap-y-8 ss:gap-y-8 px-4 sm:pt-20 md:mt-0 ss:pt-20 text-black">
 
                     <div className="col-span-2 bg-white p-4 rounded-xl drop-shadow-md">
-                        <img src={`http://localhost:1337${feature.attributes.coverImg.data.attributes.url}`} alt="" className='h-76 w-full object-cover' />
+                        <img src={`${import.meta.env.VITE_SERVER_API_URL}${feature.attributes.coverImg.data.attributes.url}`} alt="" className='h-76 w-full object-cover' />
                         <h1 className="font-bold text-2xl my-1 pt-5">{feature.attributes.title}</h1>
                         <ReactMarkdown className="pt-5 line-break">
                             {feature.attributes.content}
@@ -35,7 +35,7 @@ export default function FeaturedContent() {
                     </div>
 
                     <div className="bg-white w-full h-max drop-shadow-md rounded-xl py-5 px-4 max-sm:col-span-2 max-sm:mt-8">
-                        <img src={`http://localhost:1337${feature.attributes.authorImg.data.attributes.url}`} alt="" className='p-2 w-40 h-40 rounded-full mx-auto' />
+                        <img src={`${import.meta.env.VITE_SERVER_API_URL}${feature.attributes.authorImg.data.attributes.url}`} alt="" className='p-2 w-40 h-40 rounded-full mx-auto' />
                         <h1 className="font-bold text-2xl text-center text-gray-900 pt-3 mb-4">{feature.attributes.authorName}</h1>
                         <p className="text-center text-gray-900 font-medium">{feature.attributes.authorDesc}</p>
                     </div>

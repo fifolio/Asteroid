@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Hot() {
 
     // Fetching Hot Article
-    let { loading, data, error } = useFetch('http://localhost:1337/api/hots?populate=*');
+    let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/hots?populate=*`);
     if (loading) return (<LoadingPage />)
     let hot = data.data[0].attributes;
 
@@ -24,7 +24,7 @@ export default function Hot() {
 
                     <div className='xxs:mb-1 p-3'>
                         <Link to={`/hot`}>
-                            <img src={`http://localhost:1337${hot.coverImg.data.attributes.url}`} className='w-full mx-auto drop-shadow-md rounded-md' />
+                            <img src={`${import.meta.env.VITE_SERVER_API_URL}${hot.coverImg.data.attributes.url}`} className='w-full mx-auto drop-shadow-md rounded-md' />
                         </Link>
                     </div>
 

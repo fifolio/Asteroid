@@ -65,7 +65,7 @@ export default function Blogs({ articles }) {
                     {articles.data.map((article) => (
                         <Link key={article.id} to={`/article/${article.id}`}>
                             <div className="bg-white rounded-sm overflow-hidden drop-shadow-md lg:h-[450px] md:h-[450px]">
-                                <img src={`http://localhost:1337${article.attributes.coverImg.data.attributes.url}`} className="h-56 w-full object-cover" />
+                                <img src={`${import.meta.env.VITE_SERVER_API_URL}${article.attributes.coverImg.data.attributes.url}`} className="h-56 w-full object-cover" />
 
                                 <div className="p-5">
                                     <h3 className="font-bold text-[20px] my-[5px]">

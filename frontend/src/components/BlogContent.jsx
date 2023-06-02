@@ -23,7 +23,7 @@ export default function BlogContent({ articles }) {
             md:gap-x-8 sm:gap-y-8 ss:gap-y-8 px-4 sm:pt-20 md:mt-0 ss:pt-20 text-black">
 
                     <div className="col-span-2 bg-white p-4 rounded-xl drop-shadow-md">
-                        <img src={`http://localhost:1337${article.attributes.coverImg.data.attributes.url}`} alt="" className='h-76 w-full object-cover' />
+                        <img src={`${import.meta.env.VITE_SERVER_API_URL}${article.attributes.coverImg.data.attributes.url}`} alt="" className='h-76 w-full object-cover' />
                         <h1 className="font-bold text-2xl my-1 pt-5">{article.attributes.title}</h1>
                         <ReactMarkdown className="pt-5 line-break">
                             {article.attributes.content}
@@ -31,7 +31,7 @@ export default function BlogContent({ articles }) {
                     </div>
 
                     <div className="bg-white w-full h-max drop-shadow-md rounded-xl py-5 px-4 max-sm:col-span-2 max-sm:mt-8">
-                        <img src={`http://localhost:1337${article.attributes.authorImg.data.attributes.url}`} alt="" className='p-2 w-40 h-40 rounded-full mx-auto' />
+                        <img src={`${import.meta.env.VITE_SERVER_API_URL}${article.attributes.authorImg.data.attributes.url}`} alt="" className='p-2 w-40 h-40 rounded-full mx-auto' />
                         <Link to="/author">
                             <h1 className="font-bold text-2xl text-center text-gray-900 pt-3 mb-4">{article.attributes.authorName}</h1>
                         </Link>

@@ -5,7 +5,7 @@ import useFetch from '../api/data'
 export default function News() {
 
     // Fetching Hot Article
-    let { loading, data, error } = useFetch('http://localhost:1337/api/news?populate=*');
+    let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/news?populate=*`);
     // if (loading) return (<LoadingPage />)
 
 
@@ -48,7 +48,7 @@ export default function News() {
                                 }}>
                                     {theNews.attributes.sourceName}
                                 </p>
-                                <img src={`http://localhost:1337${theNews.attributes.coverImg.data.attributes.url}`} className="w-full h-full object-cover" style={{
+                                <img src={`${import.meta.env.VITE_SERVER_API_URL}${theNews.attributes.coverImg.data.attributes.url}`} className="w-full h-full object-cover" style={{
                                     '-webkit-mask-image': 'linear-gradient(to top, transparent 15%, black 70%)',
                                     'mask-image': 'linear-gradient(to top, transparent 15%, black 70%)',
                                 }} />
