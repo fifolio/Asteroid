@@ -18,9 +18,7 @@
 
 <h3>Frontend:</h3>
 <pre><code class="has-line-data" data-line-start="16" data-line-end="19" class="language-sh">
-   <span class="hljs-built_in">
   cd Asteroid
-   </span>
   cd frontend
   npm install
 </code></pre>
@@ -30,9 +28,7 @@
 
 <h3>Backend:</h3>
 <pre><code class="has-line-data" data-line-start="16" data-line-end="19" class="language-sh">
- <span class="hljs-built_in">
   cd Asteroid
-   </span>
   cd backend
   npm install
 </code></pre>
