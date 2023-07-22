@@ -1,6 +1,6 @@
 <h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Asteroid"></a>🌌 Welcome to Asteroid: Where the Cosmos Unveils its Secrets! 🔭</h1>
 
-<p class="has-line-data" data-line-start="3" data-line-end="4"><img width="100%" height="100%" src="https://i.ibb.co/yg8k3Lw/screencapture-localhost-5173-2023-05-31-20-20-05.png" alt="N|Solid"></p>
+<p class="has-line-data" data-line-start="3" data-line-end="4"><img width="100%" height="100%" src="https://raw.githubusercontent.com/fifolio/Asteroid/main/frontend/public/snap.PNG" alt="N|Solid"></p>
 
 <p class="has-line-data" data-line-start="5" data-line-end="6">
   Asteroid is a captivating and knowledge-rich platform that orbits around the celestial wonders of Space and Astronomy. Within these virtual pages, a stellar collection of articles and blogs awaits, each crafted by the extraordinary artificial intelligence known as ChatGPT. As your cosmic guide, ChatGPT, powered by OpenAI, delves into the depths of the universe, delivering captivating insights and igniting your curiosity.
