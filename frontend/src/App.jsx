@@ -3,12 +3,13 @@ import { Routes, Route } from 'react-router-dom'
 import useFetch from './api/data'
 import LoadingPage from "./pages/LoadingPage";
 import { Footer, Navbar } from "./components";
+import Countdown from "./components/Countdown";
 
 export default function App() {
 
   // Fetching Articles
   let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/blogs?populate=*`);
-  if (loading) return (<LoadingPage />)
+  if (loading) return (<LoadingPage />, <Countdown />)
   // if (error) return <p>Error!</p>
 
   return (

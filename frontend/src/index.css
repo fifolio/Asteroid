@@ -28,6 +28,18 @@
   margin: 4px 10px 0 0;
 }
 
+.countdown{
+  /* position: absolute; */
+  /* margin: 0; */
+  text-align: center;
+  padding: 150px 0 0 0;
+  font-size: x-large;
+  color: rgb(122, 122, 122);
+  font-weight: normal;
+  z-index: 9999;
+  
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
