@@ -5,7 +5,7 @@ export default function Errs() {
         <>
             <div>
                 <center style={{'padding': '100px 0 10px 0', 'fontSize': 'x-large', 'textTransform': 'capitalize', 'fontWeight': 'bold', 'color': 'gray'}}>
-                    <img className="" src="https://accorda.netlify.app/error.jpg" width="500" />
+                    <img className="" src="error.jpg" width="500" />
                     <br />
                     <h1 className="">
                     Oops! we couldn't find this page
