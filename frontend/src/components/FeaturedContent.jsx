@@ -17,8 +17,8 @@ export default function FeaturedContent() {
                     appwriteConfig.collection_feature,
                     `${id}`
                 );
-                setArticle(response.documents)
-                console.log(article)
+                setArticle(response)
+                console.log(response)
             } catch (error) {
                 console.error('something went wrong while fetching: ', error);
             }
