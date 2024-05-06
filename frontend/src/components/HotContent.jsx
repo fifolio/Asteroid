@@ -1,5 +1,5 @@
 import { appwriteConfig } from '../../appwrite/config';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 // import useFetch from '../api/data'
 // import LoadingPage from '../pages/LoadingPage';
