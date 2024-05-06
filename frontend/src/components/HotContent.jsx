@@ -52,7 +52,7 @@ export default function HotContent() {
                                 </div>
 
                                 <div className="bg-white w-full h-max drop-shadow-md rounded-xl py-5 px-4 max-sm:col-span-2 max-sm:mt-8">
-                                    <img src={`${article.authorImg.data.url}`} alt="" className='p-2 w-40 h-40 rounded-full mx-auto' />
+                                    <img src={`${article.authorImg.data.authorImg}`} alt="" className='p-2 w-40 h-40 rounded-full mx-auto' />
                                     <Link to="/author">
                                         <h1 className="font-bold text-2xl text-center text-gray-900 pt-3 mb-4">{article.authorName}</h1>
                                     </Link>
