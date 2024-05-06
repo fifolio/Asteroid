@@ -72,7 +72,7 @@ export default function Hot() {
     return (
         <>
         {
-            data?.map((article) => {
+            data?.map((article) => (
                 <div className="w-full bg-[#f9f9f9] py-[50px]">
                 {/* container */}
                 <div className="max-w-[1240px] mx-auto lg:mt-[85px] xxs:mt-[50px]">
@@ -103,7 +103,7 @@ export default function Hot() {
                     </div>
                 </div>
             </div>
-            })
+            ))
         }
         </>
     )
