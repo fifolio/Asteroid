@@ -21,7 +21,7 @@ export default function Hot() {
                     appwriteConfig.collection_hot,
                 );
                 setData(response.documents)
-
+                console.log(response)
             } catch (error) {
                 console.error('something went wrong while fetching: ', error);
             }
