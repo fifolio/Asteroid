@@ -1,24 +1,42 @@
+import { appwriteConfig, databases } from '../../appwrite/config';
 import { Link } from "react-router-dom";
-import useFetch from '../api/data'
-import LoadingPage from '../pages/LoadingPage'
+// import useFetch from '../api/data'
+// import LoadingPage from '../pages/LoadingPage'
 
 export default function Featured() {
 
     // Fetching Hot Article
-    let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/features?populate=*`);
-    if (loading) return (<LoadingPage />)
+    // let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/features?populate=*`);
+    // if (loading) return (<LoadingPage />)
 
-    // console.log('Features', data)
+    // // console.log('Features', data)
 
-    let features = [];
-    if (data) {
-        let arr = data.data;
-        features = arr;
-        // console.log('Features', features)
+    // let features = [];
+    // if (data) {
+    //     let arr = data.data;
+    //     features = arr;
+    //     // console.log('Features', features)
 
-    } else {
-        features = []
-    }
+    // } else {
+    //     features = []
+    // }
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await databases.listDocuments(
+                    appwriteConfig.database,
+                    appwriteConfig.collection_feature,
+                );
+                setData(response.documents)
+                console.log(response)
+            } catch (error) {
+                console.error('something went wrong while fetching: ', error);
+            }
+        }
+
+        fetchData();
+    }, []);
 
     const handleLinkClick = () => {
         window.scrollTo(0, 0);
@@ -33,17 +51,17 @@ export default function Featured() {
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 px-4 pb-10 text-black">
 
-                    {features.map((feature, index) => (
+                    {response.map((feature, index) => (
                         <Link key={index} to={`/featured/${feature.id}`} onClick={() => handleLinkClick()}>
                             <div className="bg-white rounded-sm overflow-hidden lg:h-[400px] md:h-[450px] shadow-md shadow-gray-200 hover:shadow-xl" style={{ borderBottomRightRadius: '50px', borderTopLeftRadius: '50px' }}>
-                                <img src={`${feature.attributes.coverImg.data.attributes.url}`} className="h-56 w-full object-cover" />
+                                <img src={`${feature.coverImg}`} className="h-56 w-full object-cover" />
                                 <div className="p-3">
                                     <h3 className="font-bold text-[20px] my-[5px]">
-                                        {feature.attributes.title}
+                                        {feature.title}
 
                                     </h3>
                                     <p className="text-gray-600 text-[17px] my-2">
-                                        {feature.attributes.desc}...
+                                        {feature.desc}...
                                     </p>
                                 </div>
                             </div>

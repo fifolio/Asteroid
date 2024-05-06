@@ -1,15 +1,8 @@
 import { appwriteConfig, databases } from '../../appwrite/config';
 import { useEffect, useState } from 'react';
-// import useFetch from '../api/data'
-// import LoadingPage from '../pages/LoadingPage';
 import { Link } from 'react-router-dom';
 
 export default function Hot() {
-
-    // Fetching Hot Article
-    // let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/hots?populate=*`);
-    // if (loading) return (<LoadingPage />)
-    // let hot = data.data[0].attributes;
 
     const [data, setData] = useState([]);
 
