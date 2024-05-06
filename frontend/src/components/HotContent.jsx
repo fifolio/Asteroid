@@ -2,6 +2,7 @@ import { appwriteConfig, databases } from '../../appwrite/config';
 import { useEffect, useState } from 'react';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { Link } from 'react-router-dom'
+import LoadingPage from '../pages/LoadingPage';
 
 export default function HotContent() {
 
@@ -15,7 +16,6 @@ export default function HotContent() {
                     appwriteConfig.collection_hot,
                 );
                 setData(response.documents)
-
             } catch (error) {
                 console.error('something went wrong while fetching: ', error);
             }
@@ -26,7 +26,7 @@ export default function HotContent() {
 
     return (
         <>
-            {
+            {data ?
                 data?.map((article) => (
                     <div className="w-full pb-10 bg-[#f9f9f9] py-[50px] max-sm:py-[150px]">
                         <div className="max-w-[1240px] mx-auto">
@@ -66,6 +66,7 @@ export default function HotContent() {
 
                     </div>
                 ))
+                : <LoadingPage />
             }
         </>
     )
