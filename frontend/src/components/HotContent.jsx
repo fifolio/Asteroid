@@ -27,7 +27,7 @@ export default function HotContent() {
     return (
         <>
             {
-                data?.map((article) => {
+                data?.map((article) => (
                     <div className="w-full pb-10 bg-[#f9f9f9] py-[50px] max-sm:py-[150px]">
                         <div className="max-w-[1240px] mx-auto">
 
@@ -65,7 +65,7 @@ export default function HotContent() {
                         </div>
 
                     </div>
-                })
+                ))
             }
         </>
     )
