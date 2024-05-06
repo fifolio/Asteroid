@@ -18,7 +18,7 @@ export default function FeaturedContent() {
                     `${id}`
                 );
                 setArticle(response.documents)
-                console.log(response)
+                console.log(article)
             } catch (error) {
                 console.error('something went wrong while fetching: ', error);
             }
