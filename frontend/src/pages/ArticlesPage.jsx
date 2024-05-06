@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { Footer, Navbar } from "../components"
 import { Link } from 'react-router-dom'
 
-export default function ArticlesPage({ articles }) {
+export default function ArticlesPage({ articlesData }) {
+
+    const [articles, setArticles] = useState({})
+    setArticles(articlesData)
 
     const handleLinkClick = () => {
         window.scrollTo(0, 0);
