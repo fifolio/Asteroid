@@ -44,7 +44,7 @@ export default function HotContent() {
                 md:gap-x-8 sm:gap-y-8 ss:gap-y-8 px-4 sm:pt-20 md:mt-0 ss:pt-20 text-black">
 
                                 <div className="col-span-2 bg-white p-4 rounded-xl drop-shadow-md">
-                                    <img src={`${article.coverImg.data.url}`} alt="" className='h-76 w-full object-cover' />
+                                    <img src={`${article.coverImg}`} alt="" className='h-76 w-full object-cover' />
                                     <h1 className="font-bold text-2xl my-1 pt-5">{article.title}</h1>
                                     <ReactMarkdown className="pt-5 line-break">
                                         {article.content}
