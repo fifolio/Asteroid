@@ -15,7 +15,7 @@ export default function FeaturedContent() {
                 const response = await databases.getDocument(
                     appwriteConfig.database,
                     appwriteConfig.collection_feature,
-                    id
+                    `${id}`
                 );
                 setData(response.documents)
             } catch (error) {
