@@ -10,7 +10,7 @@ export default function Homepage({ articles }) {
       <Hot />
       <Featured />
       <News />
-      <Blogs articles={articles ? articles : ""} />
+      <Blogs articles={articles} />
       {/* <Footer /> */}
     </>
   )

@@ -1,6 +1,12 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
-export default function Blogs({ articles }) {
+export default function Blogs({ articles: data }) {
+
+    const [articles, setArticles] = useState({});
+    setArticles(data)
+
+    console.log('Blogs: ', articles)
 
     const handleLinkClick = () => {
         window.scrollTo(0, 0);
