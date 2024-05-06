@@ -30,5 +30,5 @@ export default function data() {
 
 
 
-    return { loading, error, data }
+    return { error, data }
 }

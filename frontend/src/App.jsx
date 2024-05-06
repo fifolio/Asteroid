@@ -1,7 +1,7 @@
 import { BlogContentPage, Homepage, AboutPage, ArticlesPage, AuthorPage, HotPage, FeaturedPage } from "./pages/index"
 import { Routes, Route } from 'react-router-dom'
 import useFetch from './api/data'
-import LoadingPage from "./pages/LoadingPage";
+// import LoadingPage from "./pages/LoadingPage";
 import { Footer, Navbar } from "./components";
 import Countdown from "./components/Countdown";
 import ErrorPage from "./pages/ErrorPage";
