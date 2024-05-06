@@ -26,7 +26,7 @@ export default function App() {
                 appwriteConfig.database, 
                 appwriteConfig.collection_blog
             );
-            console.log(res.documents)
+            setData(res.documents)
             // setLoading(false)
         } catch (error) {
             setError(error)
