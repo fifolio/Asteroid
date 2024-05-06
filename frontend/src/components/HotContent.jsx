@@ -13,7 +13,7 @@ export default function HotContent() {
             try {
                 const response = await databases.listDocuments(
                     appwriteConfig.database,
-                    appwriteConfig.collection_hot,
+                    appwriteConfig.collection_hott,
                 );
                 setData(response.documents)
             } catch (error) {
