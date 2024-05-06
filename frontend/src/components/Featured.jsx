@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { appwriteConfig, databases } from '../../appwrite/config';
 import { Link } from "react-router-dom";
 // import useFetch from '../api/data'
@@ -20,6 +21,8 @@ export default function Featured() {
     // } else {
     //     features = []
     // }
+
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -51,7 +54,7 @@ export default function Featured() {
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 px-4 pb-10 text-black">
 
-                    {response.map((feature, index) => (
+                    {data.map((feature, index) => (
                         <Link key={index} to={`/featured/${feature.id}`} onClick={() => handleLinkClick()}>
                             <div className="bg-white rounded-sm overflow-hidden lg:h-[400px] md:h-[450px] shadow-md shadow-gray-200 hover:shadow-xl" style={{ borderBottomRightRadius: '50px', borderTopLeftRadius: '50px' }}>
                                 <img src={`${feature.coverImg}`} className="h-56 w-full object-cover" />
