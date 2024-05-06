@@ -6,6 +6,7 @@ export default function ArticlesPage({ articlesData }) {
 
     const [articles, setArticles] = useState({})
     setArticles(articlesData)
+    console.log(articles)
 
     const handleLinkClick = () => {
         window.scrollTo(0, 0);
