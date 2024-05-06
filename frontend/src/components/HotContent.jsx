@@ -28,7 +28,7 @@ export default function HotContent() {
 
             } catch (error) {
                 console.error('something went wrong while fetching: ', error);
-                setLoading(false)
+                // setLoading(false)
             }
         }
 
