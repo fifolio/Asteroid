@@ -8,9 +8,9 @@ export default function Blogs({ articles: data }) {
 
     console.log('Blogs: ', articles)
 
-    const handleLinkClick = () => {
-        window.scrollTo(0, 0);
-    }
+    // const handleLinkClick = () => {
+    //     window.scrollTo(0, 0);
+    // }
 
     return (
         <div className="w-full bg-white py-[50px]">
@@ -22,7 +22,7 @@ export default function Blogs({ articles: data }) {
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 px-4 text-black">
 
-                    {articles.map((article) => (
+                    {/* {articles.map((article) => (
                         <Link key={article.$id} to={`/article/${article.$id}`} onClick={() => handleLinkClick()}>
                             <div className="bg-white rounded-sm overflow-hidden drop-shadow-md lg:h-[450px] md:h-[450px]">
                                 <img src={`${article.coverImg}`} className="h-56 w-full object-cover" />
@@ -37,7 +37,7 @@ export default function Blogs({ articles: data }) {
                                 </div>
                             </div>
                         </Link>
-                    ))}
+                    ))} */}
 
                 </div>
 
