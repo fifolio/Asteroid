@@ -1,12 +1,12 @@
 import { appwriteConfig, databases } from '../appwrite/config';
+import { useEffect, useState } from 'react';
 import { BlogContentPage, Homepage, AboutPage, ArticlesPage, AuthorPage, HotPage, FeaturedPage } from "./pages/index"
 import { Routes, Route } from 'react-router-dom'
 // import useFetch from './api/data'
 // import LoadingPage from "./pages/LoadingPage";
-import Countdown from "./components/Countdown";
+// import Countdown from "./components/Countdown";
 import { Footer, Navbar } from "./components";
 import ErrorPage from "./pages/ErrorPage";
-import { useEffect, useState } from 'react';
 
 export default function App() {
 
@@ -27,6 +27,7 @@ export default function App() {
                 appwriteConfig.collection_blog
             );
             setData(res.documents)
+            console.log('App: ', res.documents)
             // setLoading(false)
         } catch (error) {
             setError(error)
