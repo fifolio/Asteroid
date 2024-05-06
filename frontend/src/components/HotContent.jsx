@@ -1,4 +1,4 @@
-import { appwriteConfig } from '../../appwrite/config';
+import { appwriteConfig, databases } from '../../appwrite/config';
 import { useEffect, useState } from 'react';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 // import useFetch from '../api/data'
