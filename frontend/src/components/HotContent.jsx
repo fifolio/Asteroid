@@ -1,20 +1,38 @@
+import { appwriteConfig } from '../../appwrite/config';
+import { useEffect } from 'react';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
-import useFetch from '../api/data'
-import LoadingPage from '../pages/LoadingPage';
+// import useFetch from '../api/data'
+// import LoadingPage from '../pages/LoadingPage';
 import { Link } from 'react-router-dom'
 
 export default function HotContent() {
 
     // Fetching Hot hot
-    let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/hots?populate=*`);
-    if (loading) return (<LoadingPage />)
-    let hot = data.data[0].attributes;
+    // let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/hots?populate=*`);
+    // if (loading) return (<LoadingPage />)
+    // let hot = data.data[0].attributes;
 
 
-    // const getDate = new Date();
-    // const getDay = getDate.getDate()
-    // const getMonth = getDate.getMonth()
-    // const getYear = getDate.getFullYear();
+    useEffect(() => {
+        setLoading(true)
+        const fetchData = async () => {
+            try {
+                const response = await databases.listDocuments(
+                    appwriteConfig.database,
+                    appwriteConfig.collection_hot,
+                );
+                setData(response.documents)
+                // response.data.data ? setLoading(false) : setLoading(true);
+                console.log(response)
+
+            } catch (error) {
+                console.error('something went wrong while fetching: ', error);
+                setLoading(false)
+            }
+        }
+
+        fetchData();
+    }, []);
 
     return (
         <div className="w-full pb-10 bg-[#f9f9f9] py-[50px] max-sm:py-[150px]">
