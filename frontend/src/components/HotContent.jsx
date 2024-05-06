@@ -15,7 +15,6 @@ export default function HotContent() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        setLoading(true)
         const fetchData = async () => {
             try {
                 const response = await databases.listDocuments(
@@ -28,7 +27,6 @@ export default function HotContent() {
 
             } catch (error) {
                 console.error('something went wrong while fetching: ', error);
-                // setLoading(false)
             }
         }
 
