@@ -1,16 +1,9 @@
 import { appwriteConfig, databases } from '../../appwrite/config';
 import { useEffect, useState } from 'react';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
-// import useFetch from '../api/data'
-// import LoadingPage from '../pages/LoadingPage';
 import { Link } from 'react-router-dom'
 
 export default function HotContent() {
-
-    // Fetching Hot hot
-    // let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/hots?populate=*`);
-    // if (loading) return (<LoadingPage />)
-    // let hot = data.data[0].attributes;
 
     const [data, setData] = useState([]);
 
@@ -22,8 +15,6 @@ export default function HotContent() {
                     appwriteConfig.collection_hot,
                 );
                 setData(response.documents)
-                console.log(response)
-                // response.data.data ? setLoading(false) : setLoading(true);
 
             } catch (error) {
                 console.error('something went wrong while fetching: ', error);
