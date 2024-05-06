@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import Countdown from "./components/Countdown";
 import { Footer, Navbar } from "./components";
 import ErrorPage from "./pages/ErrorPage";
+import { useEffect, useState } from 'react';
 
 export default function App() {
 
