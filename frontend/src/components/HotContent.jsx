@@ -66,7 +66,10 @@ export default function HotContent() {
 
                     </div>
                 ))
-                : <LoadingPage />
+                : 
+                (
+                    <LoadingPage />
+                )
             }
         </>
     )
