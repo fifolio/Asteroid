@@ -17,14 +17,14 @@ export default function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Homepage articles={data ? data : ""} />} />
-        <Route path="*" element={<ErrorPage />} />
-        <Route path='/featured/:id' element={<FeaturedPage />} />
-        <Route path='/hot' element={<HotPage />} />
-        <Route path="/articles" element={<ArticlesPage articles={data ? data : ""} />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/author" element={<AuthorPage />} />
-        <Route path='/article/:id' element={<BlogContentPage articles={data ? data : ""} />} />
+        {/* <Route path='/' element={<Homepage articles={data ? data : ""} />} /> */}
+        {/* <Route path="*" element={<ErrorPage />} /> */}
+        {/* <Route path='/featured/:id' element={<FeaturedPage />} /> */}
+        {/* <Route path='/hot' element={<HotPage />} /> */}
+        {/* <Route path="/articles" element={<ArticlesPage articles={data ? data : ""} />} /> */}
+        {/* <Route path="/about" element={<AboutPage />} /> */}
+        {/* <Route path="/author" element={<AuthorPage />} /> */}
+        {/* <Route path='/article/:id' element={<BlogContentPage articles={data ? data : ""} />} /> */}
       </Routes>
       <Footer />
     </>
