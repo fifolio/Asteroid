@@ -1,29 +1,32 @@
+import { appwriteConfig, databases } from '../../appwrite/config'
 import { useEffect, useState } from 'react'
 
-export default function data(url) {
+export default function data() {
 
     const [data, setData] = useState(null)
     const [error, setError] = useState(null)
-    const [loading, setLoading] = useState(true)
+    // const [loading, setLoading] = useState(true)
 
     useEffect(() => {
 
         const fetchData = async () => {
-            setLoading(true)
+            // setLoading(true)
             try {
-                const res = await fetch(url)
-                const json = await res.json()
-                setData(json)
-                setLoading(false)
+                const res =await databases.listDocuments(
+                    appwriteConfig.database, 
+                    appwriteConfig.collection_blog
+                );
+                setData(res.documents)
+                // setLoading(false)
             } catch (error) {
                 setError(error)
-                setLoading(false)
+                // setLoading(false)
             }
         }
 
         fetchData()
 
-    }, [url])
+    }, [])
 
 
 

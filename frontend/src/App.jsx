@@ -9,8 +9,8 @@ import ErrorPage from "./pages/ErrorPage";
 export default function App() {
 
   // Fetching Articles
-  let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/blogs?populate=*`);
-  if (loading) return (<LoadingPage />, <Countdown />)
+  let { loading, data, error } = useFetch();
+  // if (loading) return (<LoadingPage />, <Countdown />)
   // if (error) return <p>Error!</p>
 
   return (
