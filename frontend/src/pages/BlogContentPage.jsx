@@ -1,12 +1,12 @@
 import { Footer, Navbar, BlogContent } from "../components"
 
-export default function BlogContentPage({ articles }) {
+export default function BlogContentPage() {
 
 
     return (
         <>
             {/* <Navbar /> */}
-            <BlogContent articles={articles} />
+            <BlogContent />
             {/* <Footer /> */}
         </>
     )
