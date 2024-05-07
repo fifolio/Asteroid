@@ -1,24 +1,26 @@
+import { appwriteConfig, databases } from "../../appwrite/config";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import LoadingPage from '../pages/LoadingPage'
-import useFetch from '../api/data'
 
 export default function News() {
 
-    // Fetching Hot Article
-    let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/news?populate=*`);
-    if (loading) return (<LoadingPage />)
+    const [data, setData] = useState([]);
 
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await databases.listDocuments(
+                    appwriteConfig.database,
+                    appwriteConfig.collection_new,
+                );
+                setData(response.documents)
+            } catch (error) {
+                console.error('something went wrong while fetching: ', error);
+            }
+        }
 
-    let news = [];
-    if (data) {
-        let arr = data.data;
-        news = arr;
-        // console.log('news', news)
-
-    } else {
-        news = []
-    }
-
+        fetchData();
+    }, []);
 
     return (
         <div className="w-full bg-[#f9f9f9] py-[50px]">
@@ -31,8 +33,8 @@ export default function News() {
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-1 px-4 pb-10 text-black">
 
-                    {news.map((theNews, index) => (
-                        <Link key={index} to={theNews.attributes.url} target="_blank">
+                    {data.map((theNews, index) => (
+                        <Link key={index} to={theNews.url} target="_blank">
                             <div className="bg-white overflow-hidden lg:h-[400px] md:h-[450px] rounded-sm shadow-md">
                                 <p style={{
                                     position: 'absolute',
@@ -46,9 +48,9 @@ export default function News() {
                                     fontSize: '13px',
                                     zIndex: 1,
                                 }}>
-                                    {theNews.attributes.sourceName}
+                                    {theNews.sourceName}
                                 </p>
-                                <img src={`${theNews.attributes.coverImg.data.attributes.url}`} className="w-full h-full object-cover" style={{
+                                <img src={`${theNews.coverImg}`} className="w-full h-full object-cover" style={{
                                     '-webkit-mask-image': 'linear-gradient(to top, transparent 15%, black 70%)',
                                     'mask-image': 'linear-gradient(to top, transparent 15%, black 70%)',
                                 }} />
@@ -64,10 +66,10 @@ export default function News() {
                                         fontSize: '15px',
                                         textTransform: 'uppercase'
                                     }}>
-                                        {theNews.attributes.category}
+                                        {theNews.category}
                                     </p>
                                     <h3 className="font-bold text-[17px] mt-[-80px] m-4">
-                                        {theNews.attributes.title}
+                                        {theNews.title}
                                     </h3>
                                 </div>
                             </div>

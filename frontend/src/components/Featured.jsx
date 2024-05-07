@@ -1,26 +1,8 @@
 import { useEffect, useState } from 'react';
 import { appwriteConfig, databases } from '../../appwrite/config';
 import { Link } from "react-router-dom";
-// import useFetch from '../api/data'
-// import LoadingPage from '../pages/LoadingPage'
 
 export default function Featured() {
-
-    // Fetching Hot Article
-    // let { loading, data, error } = useFetch(`${import.meta.env.VITE_SERVER_API_URL}/api/features?populate=*`);
-    // if (loading) return (<LoadingPage />)
-
-    // // console.log('Features', data)
-
-    // let features = [];
-    // if (data) {
-    //     let arr = data.data;
-    //     features = arr;
-    //     // console.log('Features', features)
-
-    // } else {
-    //     features = []
-    // }
 
     const [data, setData] = useState([]);
 
