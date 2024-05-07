@@ -14,7 +14,6 @@ export default function Featured() {
                     appwriteConfig.collection_feature,
                 );
                 setData(response.documents)
-                console.log(response)
             } catch (error) {
                 console.error('something went wrong while fetching: ', error);
             }

@@ -26,7 +26,6 @@ export default function Countdown() {
         return `${formattedMins}:${formattedSec}`
     };
 
-    console.log(formattedTime());
     return (
         <>
             <div className="countdown">

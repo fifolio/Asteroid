@@ -29,8 +29,6 @@ export default function News() {
                 <h1 className="lg:text-[90px] xxs:text-[50px] text-left font-bold uppercase text-red-800" style={{ marginLeft: '15px' }}>Breaking News,</h1>
                 <p className="text-left lg:w-[500px] mb-[60px] font-semibold xxs:w-[90%] xxs:text-[15px] text-gray-700" style={{ marginLeft: '19px' }}>Our News Section delivers the latest updates, breaking stories, and captivating headlines. Stay connected and explore the world with us. 🌐</p>
 
-
-
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-1 px-4 pb-10 text-black">
 
                     {data.map((theNews, index) => (
@@ -58,7 +56,6 @@ export default function News() {
                                     <p style={{
                                         position: 'absolute',
                                         margin: '-30px 0px 0px 5px',
-                                        /* background-color: rgb(241, 242, 246); */
                                         padding: '5px 10px',
                                         borderRadius: '5px',
                                         color: 'black',
@@ -75,8 +72,6 @@ export default function News() {
                             </div>
                         </Link>
                     ))}
-
-
                 </div>
             </div>
         </div>

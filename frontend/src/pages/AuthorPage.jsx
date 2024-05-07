@@ -1,11 +1,9 @@
-import { Footer, Navbar, AuthorContent } from "../components"
+import { AuthorContent } from "../components"
 
 export default function News() {
     return (
         <>
-            {/* <Navbar /> */}
             <AuthorContent />
-            {/* <Footer /> */}
         </>
     )
 }

@@ -8,8 +8,6 @@ import { RiArticleLine } from 'react-icons/ri'
 import { FcAbout } from 'react-icons/fc'
 import '../App.css'
 
-
-
 export default function Navbar() {
 
     const [toggle, setToggle] = useState(false);
@@ -20,10 +18,6 @@ export default function Navbar() {
         window.scrollTo(0, 0);
         setActiveLink(i)
     }
-
-
-
-
 
     return (
         <div className="w-screen h-[80px] z-10 bg-white fixed drop-shadow-lg">

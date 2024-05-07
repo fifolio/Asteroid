@@ -1,11 +1,9 @@
-import { Footer, Navbar, HotContent } from "../components"
+import { HotContent } from "../components"
 
 export default function News() {
     return (
         <>
-            {/* <Navbar /> */}
             <HotContent />
-            {/* <Footer /> */}
         </>
     )
 }

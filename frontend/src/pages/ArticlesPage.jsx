@@ -51,13 +51,9 @@ export default function ArticlesPage() {
                                 </div>
                             </Link>
                         ))}
-
                     </div>
-
                 </div>
-
             </div>
-            {/* <Footer /> */}
         </>
     )
 }
