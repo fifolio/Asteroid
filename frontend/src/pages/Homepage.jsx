@@ -1,6 +1,6 @@
 import { Blogs, Footer, Navbar, Hot, Featured, News } from "../components"
 
-export default function Homepage({ articles }) {
+export default function Homepage() {
 
   // console.log(articles)
 
@@ -10,7 +10,7 @@ export default function Homepage({ articles }) {
       <Hot />
       <Featured />
       <News />
-      <Blogs articles={articles} />
+      <Blogs />
       {/* <Footer /> */}
     </>
   )
