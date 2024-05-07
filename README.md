@@ -22,8 +22,6 @@
 <li class="has-line-data" data-line-start="36" data-line-end="37">Vite</li>
 <li class="has-line-data" data-line-start="37" data-line-end="38">React</li>
 <li class="has-line-data" data-line-start="38" data-line-end="39">Appwrite (as a Backend)</li>
-  <li class="has-line-data" data-line-start="38" data-line-end="39">Render (as a Postgres Database)</li>
-  <li class="has-line-data" data-line-start="38" data-line-end="39">Cloudinary (as a SaaS Storage)</li>
 <li class="has-line-data" data-line-start="39" data-line-end="40">ChatGPT</li>
 <li class="has-line-data" data-line-start="40" data-line-end="42">Tailwind Css</li>
 <li class="has-line-data" data-line-start="40" data-line-end="42">Figma</li>
