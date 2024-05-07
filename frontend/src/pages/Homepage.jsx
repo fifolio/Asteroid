@@ -9,7 +9,7 @@ export default function Homepage({ articles }) {
       {/* <Navbar /> */}
       <Hot />
       <Featured />
-      {/* <News /> */}
+      <News />
       {/* <Blogs articles={articles} /> */}
       {/* <Footer /> */}
     </>
