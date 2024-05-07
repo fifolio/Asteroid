@@ -8,7 +8,7 @@ export default function Homepage({ articles }) {
     <>
       {/* <Navbar /> */}
       <Hot />
-      {/* <Featured /> */}
+      <Featured />
       {/* <News /> */}
       {/* <Blogs articles={articles} /> */}
       {/* <Footer /> */}
