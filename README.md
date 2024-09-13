@@ -10,6 +10,8 @@
   So, fasten your seatbelt, embark on this interstellar adventure, and allow the synergy of cutting-edge AI technology, the vastness of space, and the efficiency of Appwrite to transport you to a realm where the mysteries of the universe are revealed in all their splendor. Explore, learn, and expand your cosmic horizons with Asteroid, where the wonders of Space and Astronomy come alive! 🌌✨🚀
 </p>
 
+🔴 <strong>View Live: </strong><a href="https://Asteroid.netlify.app" target="_blank">Asteroid.netlify.app</a>
+
 <h2 class="code-line" data-line-start=7 data-line-end=8 ><a id="Installation_7"></a>Installation</h2>
 <p class="has-line-data" data-line-start="8" data-line-end="9">To get started with Asteroid, you’ll need to clone this repository to your local machine:</p>
 <pre><code class="has-line-data" data-line-start="11" data-line-end="13" class="language-sh">git <span class="hljs-built_in">clone</span><a href="https://github.com/fifolio/Asteroid.git"> https://github.com/fifolio/Asteroid.git</a>
